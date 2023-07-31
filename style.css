@@ -404,6 +404,7 @@
   padding: 34px 24px;
   box-sizing: border-box;
   width: 240px;
+  transition: all 300ms ease-in-out;
 }
 
 .service__icon {
@@ -418,6 +419,7 @@
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 24px;
+  transition: all 400ms ease-in;
 }
 
 .service__card-title_width_small {
@@ -437,8 +439,30 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 24px;
+  transition: all 400ms ease-in;
 }
 
 .service__card-item:last-child {
   margin-bottom: 0;
+}
+
+.service__card svg {
+  margin-bottom: 26px;
+}
+
+.service__card path {
+  transition: all 500ms ease-in-out;
+}
+
+.service__card:hover {
+  background-color: #f8be4d;
+}
+
+.service__card:hover path {
+  fill: #121920;
+}
+
+.service__card:hover .service__card-title,
+.service__card:hover .service__card-item {
+  color: #121920;
 }
