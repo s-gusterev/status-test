@@ -1,12 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Статус</title>
   </head>
-  <body>
+  <body class="root">
+    <header class="header">
+      <div class="header__container container">
+        <a href="/" class="logo logo_header"></a>
+        <a href="tel:+74957852791" class="header__phone">
+          <span class="header__phone-code">+7 (495)</span> 785-27-91</a
+        >
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__text">
+            <h1 class="hero__title hero__title_color_primary">
+              СТАТУС Премиум<span
+                class="hero__title hero__title_color_secondary"
+                >.</span
+              >
+            </h1>
+            <p class="hero__subtitle">Премиальный формат обслуживания</p>
+            <a href="#" class="button-secondary hero__button-secondary"
+              >Стать премиальным клиентом</a
+            >
+            <ul class="hero__list">
+              <li class="hero__item">
+                <span
+                  class="item item_type_font-weight-thin item_type_color-primary"
+                  >Назовите промокод</span
+                >
+                <span
+                  class="item item_type_uppercase item_type_font-weight-normal item_type_color-secondary"
+                  >#premium
+                </span>
+                <span
+                  class="item item_type_font-weight-thin item_type_color-primary"
+                  >при обращении и получите
+                </span>
+                <span
+                  class="item item_type_font-weight-normal item_type_color-secondary"
+                  >скидку 15%</span
+                >
+              </li>
+              <li class="hero__item">
+                <span
+                  class="item item_type_uppercase item_type_font-weight-normal item_type_color-secondary"
+                  >Бесплатная</span
+                >
+                <span
+                  class="item item_type_font-weight-thin item_type_color-primary"
+                  >парковка для владельцев карт премиального обслуживания</span
+                >
+                <span
+                  class="item item_type_uppercase item_type_font-weight-normal item_type_color-secondary"
+                  >STATUS</span
+                >
+                <span
+                  class="item item_type_font-weight-normal item_type_color-secondary"
+                  >Premium</span
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="form hero__form">
+            <p class="form__title">Перезвоним в течение 5 минут</p>
+            <input
+              type="text"
+              name="name-form-hero"
+              placeholder="Ваши фамилия, имя, отчество*"
+              class="form__input form__input_type_margin_true"
+            />
+            <input
+              type="tel"
+              name="tel-form-hero"
+              placeholder="Ваш телефон*"
+              class="form__input"
+            />
+            <button type="submit" class="button-primary hero__button-primary">
+              Заказать звонок
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="service container">
+        <h2 class="title-section service__title">Премиальное обслуживание</h2>
+        <ul class="service__list">
+          <li class="service__card">
+            <svg class="service__icon" width="66" height="66">
+              <use href="images/icons/icons-service.svg#service-1" />
+            </svg>
+            <h3 class="service__card-title service__card-title_width_small">
+              Без очереди
+            </h3>
+            <ul class="service__card-list">
+              <li class="service__card-item">Обслуживание в выделенной зоне</li>
+              <li class="service__card-item">
+                Предоставление отдельного кабинета для переговоров
+              </li>
+            </ul>
+          </li>
+
+          <li class="service__card">
+            <svg class="service__icon" width="45" height="66">
+              <use href="images/icons/icons-service.svg#service-2" />
+            </svg>
+            <h3 class="service__card-title">Персональный менеджер</h3>
+            <ul class="service__card-list">
+              <li class="service__card-item">
+                Индивидуальный подход к решению Ваших задач
+              </li>
+              <li class="service__card-item">Информационная поддержка</li>
+            </ul>
+          </li>
+
+          <li class="service__card">
+            <svg class="service__icon" width="66" height="66">
+              <use href="images/icons/icons-service.svg#service-3" />
+            </svg>
+            <h3 class="service__card-title">Экспертное консультирование</h3>
+            <ul class="service__card-list">
+              <li class="service__card-item">Предварительная экспертиза</li>
+              <li class="service__card-item">
+                Подготовка необходимых документов
+              </li>
+            </ul>
+          </li>
+
+          <li class="service__card">
+            <svg class="service__icon" width="66" height="66">
+              <use href="images/icons/icons-service.svg#service-4" />
+            </svg>
+            <h3 class="service__card-title">Исполнение операций в срок</h3>
+            <ul class="service__card-list">
+              <li class="service__card-item">
+                Исполнение операций в день предоставления документов Доставка
+                документов курьером
+              </li>
+              <li class="service__card-item">Выезд к клиенту</li>
+              <li class="service__card-item">Доставка документов курьером</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
