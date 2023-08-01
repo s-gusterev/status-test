@@ -106,10 +106,17 @@
   text-decoration: none;
   border-radius: 5px;
   border: 1px solid #f8be4d;
-  padding: 20px 23px 19px 23px;
   background-color: transparent;
   cursor: pointer;
   transition: all 300ms ease-in-out;
+}
+
+.button-secondary_size_large {
+  padding: 20px 23px 19px 23px;
+}
+
+.button-secondary_size_small {
+  padding: 14px 43px;
 }
 
 .button-secondary:hover {
@@ -262,7 +269,7 @@
   content: '';
   width: 15px;
   height: 25px;
-  background-image: url(./images/icons/phone.svg);
+  background-image: url(./images/icons/mobile-phone.svg);
   background-repeat: no-repeat;
   background-size: contain;
   left: -25px;
@@ -465,4 +472,152 @@
 .service__card:hover .service__card-title,
 .service__card:hover .service__card-item {
   color: #121920;
+}
+
+/* Privilege */
+
+.privilege {
+  padding-top: 98px;
+  padding-bottom: 82px;
+  background-image: url(./images/privilege-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.privilege__title {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.privilege__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 72px;
+}
+
+.privilege__image-container,
+.privilege__card-text {
+  max-width: 420px;
+}
+
+.privilege__image-container {
+  box-shadow: 0px 25px 15px 0px rgba(18, 25, 32, 0.35);
+  position: relative;
+}
+
+.privilege__image-container::after,
+.privilege__image-container::before {
+  position: absolute;
+  content: '';
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #2a2f35;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.privilege__image-container::after {
+  width: 88%;
+  height: 20px;
+  opacity: 0.9;
+  top: -20px;
+}
+
+.privilege__image-container::before {
+  width: 78%;
+  height: 18px;
+  opacity: 0.7;
+  top: -38px;
+}
+
+.privilege__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.privilege__card-title {
+  color: #f8be4d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.privilege__card-paragraph {
+  color: #88939e;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 0;
+}
+
+.privilege__card-paragraph_font-weight_bold {
+  font-weight: 700;
+}
+
+.privilege__card-paragraph_color_secondary {
+  color: #fff;
+}
+
+.privilege__subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.privilege__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.privilege__input {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  width: 278px;
+  height: 50px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #3a434c;
+  background-color: transparent;
+  outline: none;
+  padding-left: 34px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.privilege__input::placeholder {
+  color: #88939e;
+}
+
+.privilege__input:focus {
+  border-bottom: 1px solid #fff;
+}
+
+.privilege__input_type_name,
+.privilege__input_type_phone {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left 13px;
+}
+
+.privilege__input_type_name {
+  background-image: url(./images/icons/profile.svg);
+}
+
+.privilege__input_type_phone {
+  background-image: url(./images/icons/telephone-handle-silhouette.svg);
 }
