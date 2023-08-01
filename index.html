@@ -9,9 +9,15 @@
   <body class="root">
     <header class="header">
       <div class="header__container container">
-        <a href="/" class="logo logo_header"></a>
-        <a href="tel:+74957852791" class="header__phone">
-          <span class="header__phone-code">+7 (495)</span> 785-27-91</a
+        <a href="/" class="logo"></a>
+        <a
+          href="tel:+74957852791"
+          class="phone phone_icon_dark header__phone phone_color_primary phone_font-weight_primary"
+        >
+          <span class="phone phone_color_primary phone_font-weight_secondary"
+            >+7 (495)</span
+          >
+          785-27-91</a
         >
       </div>
     </header>
@@ -39,8 +45,8 @@
                 >
                 <span
                   class="item item_type_uppercase item_type_font-weight-normal item_type_color-secondary"
-                  >#premium
-                </span>
+                  >#premium </span
+                ><br />
                 <span
                   class="item item_type_font-weight-thin item_type_color-primary"
                   >при обращении и получите
@@ -219,8 +225,7 @@
             <h3 class="service__card-title">Исполнение операций в срок</h3>
             <ul class="service__card-list">
               <li class="service__card-item">
-                Исполнение операций в день предоставления документов Доставка
-                документов курьером
+                Исполнение операций в день предоставления документов
               </li>
               <li class="service__card-item">Выезд к клиенту</li>
               <li class="service__card-item">Доставка документов курьером</li>
@@ -415,7 +420,106 @@
           </li>
         </ul>
       </section>
+      <section class="premium">
+        <div class="container premium__container">
+          <h2 class="title-section premium__title">
+            Как стать премиальным клиентом
+          </h2>
+          <ol class="premium__list">
+            <li class="premium__item">
+              <span class="premium__number">01</span>
+              <p
+                class="premium__description premium__description_margin-left-large premium__description_icon_paper"
+              >
+                Закажите звонок или заполните заявку
+              </p>
+            </li>
+            <li class="premium__item">
+              <span class="premium__number">02</span>
+              <p
+                class="premium__description premium__description_margin-left-small premium__description_icon_phone premium__description_size_small"
+              >
+                Мы перезвоним Вам в течение 5 минут
+              </p>
+            </li>
+            <li class="premium__item">
+              <span class="premium__number">03</span>
+              <p
+                class="premium__description premium__description_margin-left-small premium__description_icon_support"
+              >
+                Персональный менеджер предложит набор услуг согласно Вашим
+                задачам
+              </p>
+            </li>
+          </ol>
+          <div class="premium__content">
+            <div class="premium__text">
+              <img
+                class="premium__image"
+                src="./images/premium-card.png"
+                alt="Назовите промокод"
+              />
+              <p
+                class="item item_type_color-primary item_type_font-weight-thin premium__promocode"
+              >
+                Назовите промокод
+                <span
+                  class="item item_type_color-secondary item_type_uppercase item_type_font-weight-normal"
+                  >#premium</span
+                >
+                <br />
+                при обращении и получите
+                <span
+                  class="item item_type_color-secondary item_type_font-weight-normal"
+                  >скидку 15%</span
+                >
+              </p>
+            </div>
+            <div class="premium__content-form">
+              <h3 class="premium__form-title">Вы получаете</h3>
+              <p class="premium__form-subtitle">
+                Приоритетное обслуживание, быстрые экспертные решения
+              </p>
+              <form class="form premium__form">
+                <p class="form__title">Стать премиальным клиентом</p>
+                <input
+                  type="text"
+                  name="name-form-premium"
+                  placeholder="Ваши фамилия, имя, отчество*"
+                  class="form__input form__input_type_margin_true"
+                />
+                <input
+                  type="tel"
+                  name="tel-form-premium"
+                  placeholder="Ваш телефон*"
+                  class="form__input"
+                />
+                <button
+                  type="submit"
+                  class="button-primary premium__button-primary"
+                >
+                  Стать клиентов
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="/" class="logo logo_footer"></a>
+        <a
+          href="tel:+74957852791"
+          class="phone phone_icon_light phone_color_secondary phone_font-weight_primary footer__phone"
+        >
+          <span class="phone phone_color_secondary phone_font-weight_secondary"
+            >+7 (495)</span
+          >
+          785-27-91</a
+        >
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
