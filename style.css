@@ -422,6 +422,44 @@
   transform: translateX(-50%);
 }
 
+/* Message */
+.message-container {
+  position: absolute;
+  left: 50%;
+  bottom: -76px;
+  transform: translateX(-50%);
+  animation: visibleMessage 3s ease-out both;
+}
+
+.message {
+  text-wrap: nowrap;
+}
+
+.message_warning {
+  color: red;
+}
+
+.message_success {
+  color: #f8be4d;
+}
+
+@keyframes visibleMessage {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* Service */
 
 .service {
@@ -962,6 +1000,63 @@
   margin-right: 17px;
 }
 
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  background-color: #e0ad46;
+  color: #fff;
+  font-size: 20px;
+  animation: openPopup 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 9999;
+}
+
+.popup__close {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  background-image: url(./images/icons/close.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: -36px;
+  top: -36px;
+}
+
+@keyframes openPopup {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes closePopup {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1096px) {
   .root::after {
     min-height: 826px;
@@ -1001,6 +1096,21 @@
   .root::after {
     min-height: 980px;
   }
+
+  .hero::after {
+    bottom: -152px;
+  }
+
+  .service__title {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (max-width: 958px) {
+  .hero::after {
+    bottom: 114px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1030,6 +1140,10 @@
   .premium__content-form {
     margin-right: 0;
   }
+
+  .hero::after {
+    bottom: 30px;
+  }
 }
 
 @media (max-width: 534px) {
@@ -1041,10 +1155,48 @@
   .footer__container {
     justify-content: center;
   }
+
+  .hero::after {
+    bottom: -24px;
+  }
+}
+
+@media (max-width: 517px) {
+  .hero::after {
+    bottom: 31px;
+  }
 }
 
 @media (max-width: 509px) {
   .root::after {
     min-height: 1100px;
+  }
+
+  .hero::after {
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 492px) {
+  .hero::after {
+    bottom: 28px;
+  }
+}
+
+@media (max-width: 404px) {
+  .hero::after {
+    bottom: 48px;
+  }
+}
+
+@media (max-width: 354px) {
+  .hero::after {
+    bottom: 78px;
+  }
+}
+
+@media (max-width: 349px) {
+  .hero::after {
+    bottom: 114px;
   }
 }
